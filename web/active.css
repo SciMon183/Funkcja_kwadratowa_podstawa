@@ -5,6 +5,19 @@
 }
 
 .napis{
-    font-size: 150%;
+    font-size: 350%;
     text-align: center;
+}
+
+#cowyb{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6%;
+    width: max-content;
+}
+#fnsqr{
+    background-color: aliceblue;
+    color: black;
+    font-size: 26px;
 }
