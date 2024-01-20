@@ -37,6 +37,7 @@ if a == 0:
     print("By funkcja była kwadratowa współczynnik a nie może być równy zero")
 else:
     wynik = delta_i_miejsca(a, b, c)
-    # Wypisz wynik w formie JSON
+    # Dodaj nagłówek Content-type
     print("Content-type: application/json\n")
+    # Wypisz wynik w formie JSON
     print(json.dumps(wynik))

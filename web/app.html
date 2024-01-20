@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="PL-pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalkulator</title>
+    <title>Wyskakujące Okienko z Inputami</title>
     <style>
         /* Style dla modalu */
         #myModal {
@@ -17,7 +17,14 @@
             border: 1px solid #ccc;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+
+        /* Style dla wykresu */
+        #chart {
+            margin-top: 20px;
+        }
     </style>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
 </head>
 <body>
 
@@ -39,11 +46,13 @@
     <button onclick="calculateQuadraticEquation()">Oblicz</button>
     <button onclick="closeModal()">Zamknij</button>
     <div id="result"></div>
+    <div id="chart"></div> <!-- Dodane miejsce na wykres -->
 </div>
 
 <!-- Dodaj jQuery (możesz pobrać z https://code.jquery.com/) -->
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script> <!-- Dodane Plotly -->
+<script src="script.js"></script>
 
-    <script src="script.js"></script>
 </body>
 </html>
