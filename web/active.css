@@ -1,5 +1,5 @@
 *{
-    background-color: aqua;
+    background-color: #ccc;
     font-size: medium;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -9,15 +9,14 @@
     text-align: center;
 }
 
-#cowyb{
-    display: flex;
+
+#fnsqr{
     margin-left: auto;
     margin-right: auto;
     margin-top: 6%;
     width: max-content;
-}
-#fnsqr{
-    background-color: aliceblue;
+    display: flex;
+    background-color: #fff5ff;
     color: black;
     font-size: 26px;
 }
@@ -30,7 +29,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff5ff;
+    color: #fff;
 }

@@ -1,9 +1,13 @@
 import numpy as np
 from pylab import *
+import cgi
+import cgitb
+
 #zmienne
-a = float(input("podaj współczynnik a: "))
-b = float(input("podaj współczynnik b: "))
-c = float(input("podaj współczynnik c: "))
+form = cgi.FieldStorage()
+a = float(form.getvalue('a'))
+b = float(form.getvalue('b'))
+c = float(form.getvalue('c'))
 delta = float(0)
 x0 = float(0)
 x1 = float(0)
