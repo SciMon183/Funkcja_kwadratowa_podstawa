@@ -40,9 +40,9 @@ def rysuj_wykres(a, b, c):
 
     # Oznaczenie miejsc zerowych
     if delta == 0:
-        plt.scatter(x0, a * x0 ** 2 + b * x0 + c, color='black', label=f'Miejsce zerowe: x = {x0}')
+        plt.scatter(x0, a * x0 ** 2 + b * x0 + c, color='green', label=f'Miejsce zerowe: x = {x0}')
     elif delta > 0:
-        plt.scatter([x1, x2], [a * x1 ** 2 + b * x1 + c, a * x2 ** 2 + b * x2 + c], color='pink', label=f'Miejsca zerowe: x1 = {x1}, x2 = {x2}')
+        plt.scatter([x1, x2], [a * x1 ** 2 + b * x1 + c, a * x2 ** 2 + b * x2 + c], color='green', label=f'Miejsca zerowe: x1 = {x1}, x2 = {x2}')
 
     # Wykres tabele i oznaczenia 
     plt.plot(x, y, label=f'{a}x^2 + {b}x + {c}')
@@ -50,7 +50,7 @@ def rysuj_wykres(a, b, c):
     plt.ylabel('y')
     plt.title('Wykres funkcji kwadratowej')
     # Oznaczenie wierzchołka
-    plt.scatter(p, q, color='orange', label=f'Wierzchołek: ({p}, {q})')
+    plt.scatter(p, q, color='black', label=f'Wierzchołek: ({p}, {q})')
     plt.legend()
     plt.grid(True)
     plt.show()
